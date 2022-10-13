@@ -11,7 +11,7 @@ body > :nth-child(odd) {
     background-color: #ADA6A6;
 }
 
-header div, main div {
+header div, main > div:first-of-type {
     padding: 30px;
 }
 
@@ -41,12 +41,39 @@ a:hover:not(main a) {
     transition-duration: 500ms;
 }
 
-main div {
+main > div:first-of-type {
     display: flex;
     justify-content: space-evenly;
 }
 
-.slider {
-    padding: 0;
+.slider img {
     width: 100%;
+}
+
+main > div:last-of-type form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > div:last-of-type {
+    background-color: #ADA6A6;
+}
+
+main > div:last-of-type p {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+main > div:last-of-type span {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+input[type="submit"], input[type="email"] {
+    font-size: 20px;
+    width: 350px;
+    padding: 12px;
 }
