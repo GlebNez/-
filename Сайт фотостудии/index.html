@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Фотостудия «Фокус»</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="itc-slider/itc-slider.css">
+    <script src="itc-slider/itc-slider.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="" alt="Логотип">
+            <a href="">Услуги</a>
+            <a href="">Видеомонтаж</a>
+            <a href="">Портфолио</a>
+            <a href="">Оборудование</a>
+            <a href="">Цены</a>
+            <a href="">Отзывы</a>
+        </div>
+        <div id="motto">Девиз нашей компании «Фокус»: <span>Сделай жизнь ярче!</span></div>
+    </header>
+    <main>
+        <div>
+            <a href="">Выбор региона</a>
+            <a href="">Количество участников</a>
+            <a href="">Дата и время съемки</a>
+            <a href="">Кнопка поиск</a>
+        </div>
+        <div class="slider" data-slider="itc-slider" data-autoplay="true">
+          <ol class="slider__indicators">
+            <li data-slide-to="0"></li>
+            <li data-slide-to="1"></li>
+            <li data-slide-to="2"></li>
+          </ol>
+          <div class="slider__wrapper">
+            <div class="slider__items">
+              <div class="slider__item">
+                <img src="resources/img_mountains_wide.jpg">
+              </div>
+              <div class="slider__item">
+                <img src="resources/img_nature_wide.jpg">
+              </div>
+              <div class="slider__item">
+                <img src="resources/img_snow_wide.jpg">
+              </div>
+            </div>
+          </div>
+          <button class="slider__control" data-slide="prev"></button>
+          <button class="slider__control" data-slide="next"></button>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

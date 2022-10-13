@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    height: 25em;
+}
+
+body > :nth-child(odd) {
+    background-color: #ADA6A6;
+}
+
+header div, main div {
+    padding: 30px;
+}
+
+#motto {
+    margin: 50px 70px;
+    width: 300px;
+    font-size: 30px;
+}
+
+#motto span {
+    color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header a, main a {
+    margin: 0px 20px;
+}
+
+a:hover:not(main a) {
+    color: white;
+    transition-property: color;
+    transition-duration: 500ms;
+}
+
+main div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.slider {
+    padding: 0;
+    width: 100%;
+}
