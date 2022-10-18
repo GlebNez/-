@@ -50,24 +50,28 @@ main > div:first-of-type {
     width: 100%;
 }
 
-main > div:last-of-type form {
+main > div:nth-of-type(3) {
+    height: 300px;
+}
+
+main > div:nth-of-type(3) form {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
 
-main > div:last-of-type {
+main > div:nth-of-type(odd) {
     background-color: #ADA6A6;
 }
 
-main > div:last-of-type p {
+main > div:nth-of-type(3) p {
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 0;
 }
 
-main > div:last-of-type span {
+main > div:nth-of-type(3) span {
     font-size: 25px;
     font-weight: normal;
 }
@@ -75,5 +79,18 @@ main > div:last-of-type span {
 input[type="submit"], input[type="email"] {
     font-size: 20px;
     width: 350px;
-    padding: 12px;
+    padding: 3px;
+}
+
+main > div:nth-of-type(4) {
+    padding: 0px 50px;
+}
+
+main > div:nth-of-type(4) h2 {
+    font-size: 35px;
+}
+
+main > div:nth-of-type(4) div {
+    display: grid;
+    /*grid-template-columns: ;*/
 }
