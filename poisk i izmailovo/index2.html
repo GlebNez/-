@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+	<meta charset="UTF-8">
+	<title>Focus</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="resources/newlogo1.ico" type="image/x-icon">
+</head>
+<body>
+<header>
+<!--Шапка (подвинуть лого)-->
+  <div>
+            <img src="resources/" alt="Логотип">
+            <a href="">Услуги</a>
+            <a href="">Видеомонтаж</a>
+            <a href="">Портфолио</a>
+            <a href="">Оборудование</a>
+            <a href="">Цены</a>
+            <a href="">Отзывы</a>
+        </div>
+  <nav class="menu2">
+  <ul>
+  <form> 
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+    </form>
+  </ul>
+  </nav>
+</header>
+
+<div id="poisk">
+
+<button id="btn">
+<table class="table">
+<tr>
+<td width=400px text-align=left rowspan="2">
+<a href="izmailovo.html"> <img src="resources/izail.jpg" height=600 width=1000></a>
+</td>
+<td  width=800px height=450>
+<h1>Измайловский парк</h1>
+<p>Москва 105187 Россия Район/квартал: Восточный округ</p>
+<p>
+дни недели пн вт ср чт пт сб вс
+</p>
+<p>
+время 8:00-22:00
+</p>
+<p>
+кол-во зон 2
+</p>
+</td></tr>
+<tr>
+<td colspan="2"><a href="izmailovo.html">перейти к выбору локации</a></td></tr>
+</table>
+</button>
+
+
+<button id="btn" class="ul">
+<table class="table">
+<tr>
+<td width=400px text-align=left rowspan="2">
+<a href="gorkovo.html"> <img src="resources/gorki15.jpg" height=600 width=1000></a>
+</td>
+<td  width=800px height=450>
+<h1>Парк Горького</h1>
+<p>Москва, Крымский Вал ул., д. 9, 119049</p>
+<p>
+дни недели пн вт ср чт пт сб вс
+</p>
+<p>
+время круглосуточно
+</p>
+<p>
+кол-во зон 4
+</p>
+</td></tr>
+<tr>
+<td colspan="2"><a href="gorkov.html">перейти к выбору локации</a></td></tr>
+</table>
+</button>
+
+
+
+<button id="btn" class="ul">
+<table class="table">
+<tr>
+<td width=400px text-align=left rowspan="2">
+<a href="kremlin.html"> <img src="resources/alex.jpg" height=600 width=1000></a>
+</td>
+<td  width=800px height=450>
+<h1>Московский кремль</h1>
+<p>Москва 119072 Россия, Район/квартал: Тверской</p>
+<p>
+дни недели пн вт ср чт пт сб
+</p>
+<p>
+время 9:00-17:00
+</p>
+<p>
+кол-во зон 3
+</p>
+</td></tr>
+<tr>
+<td colspan="2"><a href="kremlin.html">перейти к выбору локации</a></td></tr>
+</table>
+</button>
+
+
+<button id="btn" class="ul">
+<table class="table">
+<tr>
+<td width=400px text-align=left rowspan="2">
+<a href="sokol.html"> <img src="resources/parkS.jpg" height=600 width=1000></a>
+</td>
+<td  width=800px height=450>
+<h1>Парк Сокольники</h1>
+<p>Сокольнический Вал, 1/1, Москва 107014 Россия, Район/квартал: Восточный округ (ВАО)</p>
+<p>
+дни недели пн вт ср чт пт сб вс
+</p>
+<p>
+время круглосуточно
+</p>
+<p>
+кол-во зон 3
+</p>
+</td></tr>
+<tr>
+<td colspan="2"><a href="sokol.html">перейти к выбору локации</a></td></tr>
+</table>
+</button>
+
+
+<button id="btn" class="ul">
+<table class="table">
+<tr>
+<td width=400px text-align=left rowspan="2">
+<a href="druzh.html"> <img src="resources/druzh.jpg" height=600 width=1000></a>
+</td>
+<td  width=800px height=450>
+<h1>Парк Дружбы</h1>
+<p>Ленинградское шоссе, Москва 125565 Россия</p>
+<p>
+дни недели пн вт ср чт пт сб вс
+</p>
+<p>
+время круглосуточно
+</p>
+<p>
+кол-во зон 3
+</p>
+</td></tr>
+<tr>
+<td colspan="2"><a href="druzh.html">перейти к выбору локации</a></td></tr>
+</table>
+</button>
+</div>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, h1, li, a, i, table, div,txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  div = document.getElementById("poisk");
+  table = div.getElementsByTagName('table');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < table.length; i++) {
+    h1 = table[i].getElementsByTagName("h1")[0];
+    txtValue = h1.textContent || h1.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      table[i].style.display = "";
+    } else {
+      table[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+
+</body>
+</html>
