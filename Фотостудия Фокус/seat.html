@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор зоны в локации</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div>Фокус</div>
+        </header>
+        <main>
+            <h1>Схема локации</h1>
+            <section class="location-areas">
+                <div>
+                    <img src="krasilovomap.png" usemap="#krasilovo">
+                    <map id="map" name="krasilovo">
+                        <area data-availability="занято" data-name="Пирс" data-price="200" data-max-people="15" shape="circle" coords="875, 303, 30" href="">
+                        <area data-availability="свободно" data-name="Шатер" data-price="500" data-max-people="5" shape="circle" coords="589, 378, 15" href="">
+                        <area data-availability="свободно" data-name="Шатер" data-price="500" data-max-people="5" shape="circle" coords="710, 389, 10" href="">
+                        <area data-availability="свободно" data-name="Летний домик" data-price="300" data-max-people="10" shape="circle" coords="679, 431, 12" href="">
+                        <area data-availability="свободно" data-name="Летний домик" data-price="300" data-max-people="10" shape="circle" coords="575, 470, 12" href="">
+                        <area data-availability="свободно" data-name="Летний домик" data-price="300" data-max-people="10" shape="circle" coords="526, 561, 12" href="">
+                        <area data-availability="свободно" data-name="Летний домик" data-price="300" data-max-people="10" shape="circle" coords="629, 563, 10" href="">
+                        <area data-availability="свободно" data-name="Летний домик" data-price="300" data-max-people="10" shape="circle" coords="471, 698, 12" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="431, 782, 32" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="651, 807, 10" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="786, 677, 10" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="820, 648, 10" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="895, 593, 10" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="1002, 654, 10" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="924, 416, 12" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="955, 386, 13" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="967, 447, 12" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="1019, 440, 13" href="">
+                        <area data-availability="свободно" data-name="Профессиональная фотостудия" data-price="300" data-max-people="10" shape="circle" coords="1016, 492, 10" href="">
+                    </map>
+                    <div>
+                        <h2>Описание зоны</h2>
+                        <hr>
+                        <span>Название зоны: <span id="area-name"></span></span>
+                        <br>
+                        <span>Стоимость зоны (руб/ч): <span id="area-price"></span></span>
+                        <br>
+                        <span>Статус: <span id="area-occupation"></span></span>
+                        <hr>
+                        <button id="selectBtn">Выбрать</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="spahotelmap.png" usemap="#spahotel">
+                    <map id="map" name="spahotel">
+                        <area data-availability="свободно" data-name="Пирс" data-price="200" data-max-people="15" shape="circle" coords="866, 154, 40" href="">
+                        <area data-availability="свободно" data-name="Яхт-клуб" data-price="500" data-max-people="5" shape="circle" coords="520, 422, 30" href="">
+                        <area data-availability="свободно" data-name="Ресторан" data-price="500" data-max-people="5" shape="circle" coords="563, 487, 25" href="">
+                        <area data-availability="занято" data-name="Профессиональная фотостудия" data-price="300" data-max-people="10" shape="circle" coords="476, 488, 30" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="651, 498, 15" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="658, 440, 10" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="626, 413, 12" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="579, 420, 10" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="575, 374, 12" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="667, 386, 12" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="651, 343, 15" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="605, 338, 12" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="573, 310, 12" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="634, 290, 12" href="">
+                    </map>
+                    <div>
+                        <h2>Описание зоны</h2>
+                        <hr>
+                        <span>Название зоны: <span id="area-name"></span></span>
+                        <br>
+                        <span>Стоимость зоны (руб/ч): <span id="area-price"></span></span>
+                        <br>
+                        <span>Статус: <span id="area-occupation"></span></span>
+                        <hr>
+                        <button id="selectBtn">Выбрать</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="parkhotelmap.png" usemap="#parkhotel">
+                    <map id="map" name="parkhotel">
+                        <area data-availability="занято" data-name="Шатер" data-price="700" data-max-people="10" shape="circle" coords="563, 506, 40" href="">
+                        <area data-availability="свободно" data-name="Бассейн" data-price="2000" data-max-people="15" shape="circle" coords="635, 695, 30" href="">
+                        <area data-availability="занято" data-name="Летний домик" data-price="400" data-max-people="5" shape="circle" coords="699, 561, 50" href="">
+                        <area data-availability="занято" data-name="Летний домик" data-price="400" data-max-people="5" shape="circle" coords="799, 504, 45" href="">
+                        <area data-availability="занято" data-name="Летний домик" data-price="400" data-max-people="5" shape="circle" coords="747, 407, 35" href="">
+                        <area data-availability="занято" data-name="Летний домик" data-price="400" data-max-people="5" shape="circle" coords="221, 576, 45" href="">
+                        <area data-availability="свободно" data-name="Летний домик" data-price="400" data-max-people="5" shape="circle" coords="360, 491, 40" href="">
+                        <area data-availability="свободно" data-name="Летний домик" data-price="400" data-max-people="5" shape="circle" coords="428, 415, 35" href="">
+                        <area data-availability="свободно" data-name="Летний домик" data-price="400" data-max-people="5" shape="circle" coords="491, 344, 35" href="">
+                        <area data-availability="свободно" data-name="Летний домик" data-price="400" data-max-people="5" shape="circle" coords="350, 210, 25" href="">
+                        <area data-availability="свободно" data-name="Летний домик" data-price="400" data-max-people="5" shape="circle" coords="382, 154, 20" href="">
+                        <area data-availability="занято" data-name="Летний домик" data-price="400" data-max-people="5" shape="circle" coords="639, 204, 40" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="1063, 283, 20" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="1043, 329, 23" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="1155, 337, 20" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="1158, 279, 18" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="1141, 236, 15" href="">
+                        <area data-availability="свободно" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="1207, 268, 20" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="1198, 450, 25" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="1242, 499, 20" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="1231, 601, 22" href="">
+                        <area data-availability="занято" data-name="Беседка" data-price="200" data-max-people="5" shape="circle" coords="1159, 621, 20" href="">
+                    </map>
+                    <div>
+                        <h2>Описание зоны</h2>
+                        <hr>
+                        <span>Название зоны: <span id="area-name"></span></span>
+                        <br>
+                        <span>Стоимость зоны (руб/ч): <span id="area-price"></span></span>
+                        <br>
+                        <span>Статус: <span id="area-occupation"></span></span>
+                        <hr>
+                        <button id="selectBtn">Выбрать</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <span>Фокус</span>
+                <a href="index.html">Домой</a>
+            </div>
+            <nav>
+                <div>
+                    <a href="">Войти</a>
+                    <a href="">Зарегистрироваться</a>
+                    <a href="">Контакты</a>
+                </div>
+                <div>
+                    <a href="">Новости</a>
+                    <a href="">Возврат</a>
+                    <a href="">Отзыв</a>
+                </div>
+            </nav>
+            <div class="footer-contacts">
+                <div>
+                    <img src="facebook.png">
+                    <img src="whatsapp.png">
+                    <img src="twitter.png">
+                </div>
+                <span>8 (800) 333-30-30</span>
+            </div>
+        </footer>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
