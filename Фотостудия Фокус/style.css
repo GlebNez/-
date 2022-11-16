@@ -265,7 +265,7 @@ legend {
     margin-top: 10px;
 }
 
-.order-section form fieldset > span > span {
+.order-section form fieldset > span > span, #final-price {
     font-weight: bold;
 }
 

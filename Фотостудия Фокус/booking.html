@@ -28,14 +28,15 @@
                     </fieldset>
                     <fieldset>
                         <legend>Выбор дополнительных услуг</legend>
-                        <input type="checkbox" name="photographer-services" id="photographer-services">
-                        <label for="photographer-services">Услуги фотографа</label>
-                        <input type="checkbox" name="requisite-services" id="requisite-services">
-                        <label for="requisite-services">Услуги использования реквизита для съемок</label>
-                        <input type="checkbox" name="print-photos-services" id="print-photos-services">
-                        <label for="print-photos-services">Услуги моментальной печати фотографий</label>
-                        <input type="checkbox" name="taxi-services" id="taxi-services">
-                        <label for="taxi-services">Услуги такси</label>
+                        <input type="checkbox" name="photographer-services" id="photographer-services" data-price="2000">
+                        <label for="photographer-services">Услуги фотографа (2000 ₽/час)</label>
+                        <input type="checkbox" name="requisite-services" id="requisite-services" data-price="500">
+                        <label for="requisite-services">Услуги использования реквизита для съемок (от 500 ₽/час)</label>
+                        <input type="checkbox" name="print-photos-services" id="print-photos-services" data-price="30">
+                        <label for="print-photos-services">Услуги моментальной печати фотографий (30 ₽/шт)</label>
+                        <br>
+                        <input type="checkbox" name="taxi-services" id="taxi-services" data-price="50">
+                        <label for="taxi-services">Услуги такси (50 ₽ + 10 ₽ за каждый км)</label>
                     </fieldset>
                     <span>Комментарий к заказу:<br>
                           <textarea name="comment" cols="40" rows="6"></textarea><br>
